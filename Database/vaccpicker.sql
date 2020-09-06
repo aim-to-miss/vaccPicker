@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 06, 2020 at 03:37 PM
+-- Generation Time: Sep 06, 2020 at 03:42 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.2.33
 
@@ -237,6 +237,36 @@ ALTER TABLE `vaccine`
   ADD UNIQUE KEY `name` (`name`,`sub_name`);
 
 --
+-- Indexes for table `vaccine_age_boundary`
+--
+ALTER TABLE `vaccine_age_boundary`
+  ADD KEY `vaccine_id` (`vaccine_id`);
+
+--
+-- Indexes for table `vaccine_category`
+--
+ALTER TABLE `vaccine_category`
+  ADD KEY `vaccine_id` (`vaccine_id`);
+
+--
+-- Indexes for table `vaccine_dose`
+--
+ALTER TABLE `vaccine_dose`
+  ADD KEY `vaccine_id` (`vaccine_id`);
+
+--
+-- Indexes for table `vaccine_requirements`
+--
+ALTER TABLE `vaccine_requirements`
+  ADD KEY `vaccine_id` (`vaccine_id`);
+
+--
+-- Indexes for table `vaccine_type`
+--
+ALTER TABLE `vaccine_type`
+  ADD KEY `vaccine_id` (`vaccine_id`);
+
+--
 -- Indexes for table `vacc_requests`
 --
 ALTER TABLE `vacc_requests`
@@ -264,6 +294,36 @@ ALTER TABLE `hospital_info`
   ADD CONSTRAINT `hospital_info_ibfk_2` FOREIGN KEY (`LLEID`) REFERENCES `administrator` (`id`),
   ADD CONSTRAINT `hospital_info_ibfk_3` FOREIGN KEY (`MLAID`) REFERENCES `administrator` (`id`),
   ADD CONSTRAINT `hospital_info_ibfk_4` FOREIGN KEY (`TLAID`) REFERENCES `administrator` (`id`);
+
+--
+-- Constraints for table `vaccine_age_boundary`
+--
+ALTER TABLE `vaccine_age_boundary`
+  ADD CONSTRAINT `vaccine_age_boundary_ibfk_1` FOREIGN KEY (`vaccine_id`) REFERENCES `vaccine` (`vaccine_id`);
+
+--
+-- Constraints for table `vaccine_category`
+--
+ALTER TABLE `vaccine_category`
+  ADD CONSTRAINT `vaccine_category_ibfk_1` FOREIGN KEY (`vaccine_id`) REFERENCES `vaccine` (`vaccine_id`);
+
+--
+-- Constraints for table `vaccine_dose`
+--
+ALTER TABLE `vaccine_dose`
+  ADD CONSTRAINT `vaccine_dose_ibfk_1` FOREIGN KEY (`vaccine_id`) REFERENCES `vaccine` (`vaccine_id`);
+
+--
+-- Constraints for table `vaccine_requirements`
+--
+ALTER TABLE `vaccine_requirements`
+  ADD CONSTRAINT `vaccine_requirements_ibfk_1` FOREIGN KEY (`vaccine_id`) REFERENCES `vaccine` (`vaccine_id`);
+
+--
+-- Constraints for table `vaccine_type`
+--
+ALTER TABLE `vaccine_type`
+  ADD CONSTRAINT `vaccine_type_ibfk_1` FOREIGN KEY (`vaccine_id`) REFERENCES `vaccine` (`vaccine_id`);
 
 --
 -- Constraints for table `vacc_requests`

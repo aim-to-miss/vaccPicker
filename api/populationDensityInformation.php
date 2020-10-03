@@ -1,19 +1,13 @@
 <html>
 <header>
-
 </header>
-
 <body>
-
     <div>
         <label>Polygon</label>
         <textarea id="polygon" rows="9" cols="9" value=""></textarea>
     </div>
-
-
     <button onclick="test()">test</button>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     <script type="application/javascript">
         function test() {
             var polygon = $('#polygon').val();
@@ -40,5 +34,4 @@
 
     </script>
 </body>
-
 </html>

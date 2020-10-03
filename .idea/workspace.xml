@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="275b3860-1d7c-4711-9c54-3b8b2290d2d9" name="Default Changelist" comment="" />
+    <list default="true" id="275b3860-1d7c-4711-9c54-3b8b2290d2d9" name="Default Changelist" comment="Front End Added" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,8 +58,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601700485805</updated>
-      <workItem from="1601700496251" duration="1122000" />
+      <workItem from="1601700496251" duration="1653000" />
     </task>
+    <task id="LOCAL-00001" summary="Front End Added">
+      <created>1601701877888</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601701877888</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,5 +88,11 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Front End Added" />
     <option name="LAST_COMMIT_MESSAGE" value="Front End Added" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2" timestamp="1601701898739">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="272" key="Vcs.Push.Dialog.v2/1920.0.1536.864/0.0.1920.1080@0.0.1920.1080" timestamp="1601701898739" />
   </component>
 </project>
